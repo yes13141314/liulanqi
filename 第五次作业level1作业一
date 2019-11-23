@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<,>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #button1{color:blue;}
+    #button2{color:red;}
+   
+    
+</style>
+<script language="JavaScript">
+    var Arraycolor = new Array("purple", "yellow", "red", "blue");
+		var n = 0;
+ 
+		function turncolors() {
+			if(n == (Arraycolor.length)) {
+				n = 0
+			}
+			++n;
+			document.bgColor = Arraycolor[n];
+    }
+    var Arrayfont=new Array("10px","20px","30px","40px");
+        var i=0; 
+        function turnfont(){
+        if(i==(Arrayfont.length)){
+            i=0
+        }
+        ++i;
+        document.getElementById("hh").style.fontSize=Arrayfont[i]
+        }
+</script>
+</head>
+<body>
+    
+    
+    <input type="button" id=button1 onclick="turncolors();"  value="按钮1">
+    <input type="button" id=button2 onclick="turnfont();" value="按钮2" >
+    <div id="hh">重庆邮电大学</div>
+
+</div>
+</body>
+</html>
